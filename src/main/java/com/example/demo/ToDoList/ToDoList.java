@@ -1,19 +1,40 @@
 package com.example.demo.ToDoList;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table
+@AllArgsConstructor
+@NoArgsConstructor
 public class ToDoList {
 
     @Id
+    private Integer id;
+
+    @NotBlank
     private String name;
     private String description;
+
+    @JsonFormat(pattern="yyyy-MM-dd")
+    @NotBlank
     private String dueDate;
+
+    @NotBlank
     private String status;
 
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
