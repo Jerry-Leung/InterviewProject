@@ -20,6 +20,7 @@ public class ToDoList {
 
     @NotBlank
     private String name;
+    @NotBlank
     private String description;
 
     @JsonFormat(pattern="yyyy-MM-dd")
