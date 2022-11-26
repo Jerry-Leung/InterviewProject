@@ -2,8 +2,18 @@
 
 Features:
 CRUD
-Sorting by id, name, description, due date, state
-Filtering by getting specific status, getting items before certain date
+
+
+Sorting by id, name, description, due date, state:
+
+localhost:8080/api/v1/get/toDoLists/date
+
+Filtering by getting specific status, getting items before certain date:
+
+localhost:8080/api/v1/get/toDoLists/date/2023-01-01
+localhost:8080/api/v1/get/toDoLists/status/pending
+
+
 Data validation (all attributes should not be blank)
 
 Layer architecture (controller, service, repository layer)
