@@ -4,7 +4,7 @@ Features:
 CRUD
 Sorting by id, name, description, due date, state
 Filtering by getting specific status, getting items before certain date
-Data validation (id, name, due date, status should not be blank)
+Data validation (all attributes should not be blank)
 
 Layer architecture (controller, service, repository layer)
 
